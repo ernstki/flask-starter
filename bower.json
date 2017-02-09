@@ -1,0 +1,35 @@
+{
+  "name": "flask-starter",
+  "authors": [
+    "Kevin Ernst <ernstki@mail.uc.edu>"
+  ],
+  "description": "A simple Flask starter app",
+  "main": "",
+  "keywords": [
+    "flask",
+    "vue",
+    "vuejs",
+    "bower",
+    "boilerplate",
+    "quickstart",
+    "lodash"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.uc.edu/ernstki/flask-starter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "fetchival": "^0.3.2",
+    "lodash": "^4.17.4",
+    "vue": "^2.1.10",
+    "jquery": "^3.1.1"
+  }
+}

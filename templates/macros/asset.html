@@ -1,0 +1,36 @@
+{#- Source: https://realpython.com/blog/python/primer-on-jinja-templating/ -#}
+
+{% macro css(source) -%}
+<link href="{{ url_for('static', filename='css/' ~ source) }}" rel="stylesheet">
+{%- endmacro -%}
+
+{% macro js(source) -%}
+<script src="{{ url_for('static', filename='js/' ~ source) }}"></script>
+{%- endmacro -%}
+
+{% macro vendorcss(source) -%}
+<link href="{{ url_for('static', filename='vendor/' ~ source) }}" rel="stylesheet">
+{%- endmacro -%}
+
+{% macro vendorjs(source) -%}
+<script src="{{ url_for('static', filename='vendor/' ~ source) }}"></script>
+{%- endmacro -%}
+
+{% macro unpkg(lib) -%}
+<script src="https://unpkg.com/{{ lib }}/dist/{{ lib }}.min.js"></script>
+{%- endmacro -%}
+
+{% macro favicon() -%}
+<link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+{%- endmacro -%}
+
+{% macro favicons() -%}
+<link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}"
+      sizes="16x16" type="image/png">
+<link rel="icon" href="{{ url_for('static', filename='img/favicon32.png') }}"
+      sizes="32x32" type="image/png">
+<link rel="icon" href="{{ url_for('static', filename='img/favicon256.png') }}"
+      sizes="256x256" type="image/png">
+<link rel="icon" href="{{ url_for('static', filename='img/favicon512.png') }}"
+      sizes="512x512" type="image/png">
+{%- endmacro -%}
